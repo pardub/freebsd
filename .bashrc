@@ -44,4 +44,8 @@ alias speed='speedtest-cli --server XYZ --simple'
 #Need to know your local IP address?
 alias ipe='curl ipinfo.io/ip'
 
+#Clear the screen
+alias c='clear'
+
+
 
