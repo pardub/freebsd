@@ -35,7 +35,7 @@ alias sha='shasum -a 256'
 #limit to 5 pings.
 alias ping='ping -c 5'
 
-#Start a web server in any folder you'd like.
+#Start a web server in any folder you'd like
 alias www='python -m SimpleHTTPServer 8000'
 
 ###speed test
