@@ -21,6 +21,9 @@ export PATH
 ########To disable an alias, add "\" before the alias####
 ##########EXTRA INFO##########
 alias ll='ls -alh'
+alias h='history'
+alias mv='mv -iv'
+alias cp='cp -iv'
 
 alias rm='rm -i'  ##use with caution with script
 alias untar='tar -zxvf'
