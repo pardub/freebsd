@@ -17,7 +17,9 @@ export PATH
 
 # User specific aliases and functions
 
-
+##########EXTRA INFO##########
+########To disable an alias, add "\" before the alias####
+##########EXTRA INFO##########
 alias affichage="ls -all"
 
 alias rm='rm -i'  ##use with caution with script
