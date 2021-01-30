@@ -20,7 +20,7 @@ export PATH
 ##########EXTRA INFO##########
 ########To disable an alias, add "\" before the alias####
 ##########EXTRA INFO##########
-alias affichage="ls -all"
+alias ll='ls -alh'
 
 alias rm='rm -i'  ##use with caution with script
 alias untar='tar -zxvf'
