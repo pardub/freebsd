@@ -47,5 +47,6 @@ alias ipe='curl ipinfo.io/ip'
 #Clear the screen
 alias c='clear'
 
+#######GIT COMMANDS#####
 
 
