@@ -31,6 +31,7 @@ alias mkdir='mkdir -p'
 alias diffy='diff -y --suppress-common-lines --width=250'
 alias gpa='git-pull-all'
 alias untar='tar -zxvf'
+alias c='clear'
 
 #Want to download something but be able to resume if something goes wrong?
 alias wget='wget -c'
