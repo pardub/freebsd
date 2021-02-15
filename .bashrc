@@ -114,13 +114,13 @@ alias gpumeminfo='grep -i --color memory /var/log/Xorg.0.log'
 #-------------------------------------------------------------
 # Git Alias Commands
 #-------------------------------------------------------------
-alias g="git status"
+alias gst="git status"
 alias ga="git add"
 alias gaa="git add ."
 alias gau="git add -u"
-alias gc="git commit -m"
+alias gci="git commit -m"
 alias gca="git commit -am"
-alias gb="git branch"
+alias gbr="git branch"
 alias gbd="git branch -d"
 alias gco="git checkout"
 alias gcob="git checkout -b"
@@ -144,6 +144,9 @@ alias gd="git diff"
 alias go="git checkout "
 alias gk="gitk --all&"
 alias gx="gitx --all"
+alias ghist="log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short"
+alias gtype="cat-file -t"
+alias gdump="cat-file -p"
 
 # show ignored files by git
 alias gx="ign = ls-files -o -i --exclude-standard"
