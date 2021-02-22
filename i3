@@ -1,4 +1,6 @@
 # i3 config file (v4)
+#config to set up screen resolution 1280x720 on Proxmox vm
+exec --no-startup-id "xrandr --output default --mode 1280x720
 
 # I prefer to use the Win key as the mod key.
 # Arch Linux.
