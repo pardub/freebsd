@@ -1,10 +1,7 @@
 # i3 config file (v4)
 
-# I prefer to use the Win key as the mod key.
-# Arch Linux.
-#set $mod Mod4
-# FreeBSD.
-set $mod Mod1
+# set Windows key mod key
+set $mod Mod4
 
 # Default font for i3.
 font pango:DejaVu Sans Mono 8
@@ -187,14 +184,6 @@ bar {
     status_command ~/.config/i3/conky-i3bar.sh
 }
 
-## Autostart applicatons ##
+#config to set up screen resolution 1280x720 on Proxmox vm
+exec --no-startup-id "xrandr --output default --mode 1280x720
 
-# Let's get our wallpaper.
-# You can run nitrogen from the console and set it up, afterwards use "--restore" to use it in i3.
-exec --no-startup-id "nitrogen --restore"
-
-# If you would like to be able to switch between keyboard layouts, this is the
-# way to do it. As an example I am swithing between a Danish and an Arabic
-# keyboard layout in this setup.
-# You switch between layouts by pressing "left CTRL + right CTRL".
-exec --no-startup-id "setxkbmap -layout dk,ara -option grp:ctrls_toggle"
