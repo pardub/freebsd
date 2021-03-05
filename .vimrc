@@ -1,5 +1,4 @@
 set number
-set history=1000
 syntax on
 set autoindent          " Respect indentation when starting a new line.
 set tabstop=4           " number of visual spaces per TAB
