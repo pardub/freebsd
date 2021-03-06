@@ -1,4 +1,5 @@
-"curl -LJO https://github.com/pardub/freebsd/edit/main/.vimrc
+" curl -LJO https://github.com/pardub/freebsd/edit/main/.vimrc
+" git clone --depth 1 https://github.com/neoclide/coc.nvim.git
 set number
 set encoding=utf-8
 set history=1000
