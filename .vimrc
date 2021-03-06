@@ -1,4 +1,5 @@
 set number
+set encoding=utf-8
 set history=1000
 syntax on
 set autoindent          " Respect indentation when starting a new line.
