@@ -1,3 +1,4 @@
+"curl -LJO https://github.com/pardub/freebsd/edit/main/.vimrc
 set number
 set encoding=utf-8
 set history=1000
