@@ -23,4 +23,5 @@ set hlsearch            " highlight matches
 set ignorecase          " do case insensitive search
 colorscheme murphy      "Change a colorscheme.
 set backspace=2         " Fix backspace behavior on most terminals.
+"command! -nargs=* Wrap set wrap linebreak nolist
 
