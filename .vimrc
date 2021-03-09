@@ -2,6 +2,7 @@
 " git clone --depth 1 https://github.com/neoclide/coc.nvim.git
 au BufNewFile,BufRead *.py
 set number
+set relativenumber
 set encoding=utf-8
 set history=1000
 syntax on
