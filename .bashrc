@@ -14,7 +14,13 @@ export PATH
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
-export TERM=”screen-256color”  #added for vim powerline
+
+### Start Bash Powerline config
+ powerline-daemon -q
+  1 POWERLINE_BASH_CONTINUATION=1
+  2 POWERLINE_BASH_SELECT=1
+  3 source /home/marc/.local/lib/python3.9/site-packages/powerline/bindings/bash/powerline.sh
+### End Bash Powerline config
 
 # User specific aliases and functions
 
