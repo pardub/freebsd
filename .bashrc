@@ -14,6 +14,7 @@ export PATH
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
+export TERM=”screen-256color”  #added for vim powerline
 
 # User specific aliases and functions
 
