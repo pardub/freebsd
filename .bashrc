@@ -17,11 +17,10 @@ export PATH
 
 ### Start Bash Powerline config
 
-. $HOME/.local/lib/python3.9/site-packages/powerline/bindings/bash/powerline.sh
- ## powerline-daemon -q
- powerline-daemon --quiet
+ powerline-daemon -q
  POWERLINE_BASH_CONTINUATION=1
  POWERLINE_BASH_SELECT=1
+ . /usr/local/lib/python3.9/site-packages/powerline/bindings/bash/powerline.sh
   
 ### End Bash Powerline config
 
