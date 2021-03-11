@@ -16,10 +16,13 @@ export PATH
 # export SYSTEMD_PAGER=
 
 ### Start Bash Powerline config
- powerline-daemon -q
-  1 POWERLINE_BASH_CONTINUATION=1
-  2 POWERLINE_BASH_SELECT=1
-  3 source /home/marc/.local/lib/python3.9/site-packages/powerline/bindings/bash/powerline.sh
+
+. $HOME/.local/lib/python3.9/site-packages/powerline/bindings/bash/powerline.sh
+ ## powerline-daemon -q
+ powerline-daemon --quiet
+ POWERLINE_BASH_CONTINUATION=1
+ POWERLINE_BASH_SELECT=1
+  
 ### End Bash Powerline config
 
 # User specific aliases and functions
