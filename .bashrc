@@ -16,7 +16,7 @@ export PATH
 # export SYSTEMD_PAGER=
 
 ### Start Bash Powerline config
-
+ export TERM="screen-256color"
  powerline-daemon -q
  POWERLINE_BASH_CONTINUATION=1
  POWERLINE_BASH_SELECT=1
