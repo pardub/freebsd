@@ -35,4 +35,8 @@ noremap <silent> <expr> $ (v:count == 0 ? 'g$' : '$')
 set  rtp+=/home/marc/.local/lib/python3.9/site-packages/powerline/bindings/vim/
 set laststatus=2
 set t_Co=256
+set showtabline=2 " Always display the tabline, even if there is only one tab
+set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 " ===== End Powerline Config
+
+
