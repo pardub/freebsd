@@ -64,7 +64,6 @@ alias fgrep='fgrep --color=auto'
 alias diff='colordiff'
 
 # handy short cuts #
-alias h='history'
 alias j='jobs -l'
 
 
