@@ -4,13 +4,14 @@ export EDITOR="/usr/bin/vim" # define Vim as the editor by default
 HISTFILE="$HOME/.zsh_history"
 HISTSIZE=500000
 SAVEHIST=500000
+setopt INC_APPEND_HISTORY_TIME
 
 # User specific aliases and functions
 
 ##########EXTRA INFO##########
 ########To disable an alias, add "\" before the alias####
 ##########EXTRA INFO##########
-alias ll='ls -alh'
+alias ll="ls -alh"
 alias h='history'
 alias mv='mv -iv'
 alias cp='cp -iv'
