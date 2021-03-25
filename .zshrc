@@ -19,6 +19,7 @@ setopt appendhistory
 ##########EXTRA INFO##########
 alias ll="ls -alh"
 alias history="history 1"
+alias h="history"
 alias mv="mv -iv"
 alias cp="cp -iv"
 alias rm="rm -iv"
