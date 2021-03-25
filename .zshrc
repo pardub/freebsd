@@ -12,7 +12,7 @@ setopt INC_APPEND_HISTORY_TIME
 ########To disable an alias, add "\" before the alias####
 ##########EXTRA INFO##########
 alias ll="ls -alh"
-alias h='history'
+alias history='history 1'
 alias mv='mv -iv'
 alias cp='cp -iv'
 alias rm='rm -iv'
