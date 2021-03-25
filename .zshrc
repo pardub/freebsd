@@ -1,104 +1,111 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 
 export EDITOR="/usr/bin/vim" # define Vim as the editor by default
 
 HISTFILE="$HOME/.zsh_history"
 HISTSIZE=500000
 SAVEHIST=500000
-setopt INC_APPEND_HISTORY_TIME
-
+setopt appendhistory
 # User specific aliases and functions
 
 ##########EXTRA INFO##########
 ########To disable an alias, add "\" before the alias####
 ##########EXTRA INFO##########
 alias ll="ls -alh"
-alias history='history 1'
-alias mv='mv -iv'
-alias cp='cp -iv'
-alias rm='rm -iv'
-alias df='df -h'
-alias du='du -h'
-alias mkdir='mkdir -p'
-alias diffy='diff -y --suppress-common-lines --width=250'
-alias gpa='git-pull-all'
-alias untar='tar -zxvf'
-alias c='clear'
+alias h="history 1"
+alias mv="mv -iv"
+alias cp="cp -iv"
+alias rm="rm -iv"
+alias df="df -h"
+alias du="du -h"
+alias mkdir="mkdir -p"
+alias diffy="diff -y --suppress-common-lines --width=250"
+alias gpa="git-pull-all"
+alias untar="tar -zxvf"
+alias c="clear"
 
 #Want to download something but be able to resume if something goes wrong?
-alias wget='wget -c'
+alias wget="wget -c"
 
 #Need to generate a random, 20-character password for a new online account?
 alias getpass="openssl rand -base64 20"
 
 #Downloaded a file and need to test the checksum?
-alias sha='shasum -a 256'
+alias sha="shasum -a 256"
 
-#Start a web server in any folder you'd like
-alias www='python -m SimpleHTTPServer 8000'
+#Start a web server in any folder you"d like
+alias www="python -m SimpleHTTPServer 8000"
 
 #####NETWORK
 ###speed test
-alias speed='speedtest-cli --server XYZ --simple'
+alias speed="speedtest-cli --server XYZ --simple"
 
 #Need to know your local IP address?
-alias ipe='curl ipinfo.io/ip/'
+alias ipe="curl ipinfo.io/ip/"
 
 #Show open ports
-alias ports='netstat -tulanp'
+alias ports="netstat -tulanp"
 
 #limit to 5 pings.
-alias ping='ping -c 5'
+alias ping="ping -c 5"
 
 # Do not wait interval 1 second, go fast #
-alias fastping='ping -c 100 -s.2'
+alias fastping="ping -c 100 -s.2"
 
 #Clear the screen
-alias c='clear'
+alias c="clear"
 
 #Colorize the grep command output for ease of use (good for log files)
-alias grep='grep --color=auto'
-alias egrep='egrep --color=auto'
-alias fgrep='fgrep --color=auto'
+alias grep="grep --color=auto"
+alias egrep="egrep --color=auto"
+alias fgrep="fgrep --color=auto"
 
 # install  colordiff package :)
-alias diff='colordiff'
+alias diff="colordiff"
 
 # handy short cuts #
-alias j='jobs -l'
+alias h="history"
+alias j="jobs -l"
 
 
 ######### FIREWALL
 ## shortcut  for iptables and pass it via sudo#
-alias ipt='sudo /sbin/iptables'
+alias ipt="sudo /sbin/iptables"
  
 # display all rules #
-alias iptlist='sudo /sbin/iptables -L -n -v --line-numbers'
-alias iptlistin='sudo /sbin/iptables -L INPUT -n -v --line-numbers'
-alias iptlistout='sudo /sbin/iptables -L OUTPUT -n -v --line-numbers'
-alias iptlistfw='sudo /sbin/iptables -L FORWARD -n -v --line-numbers'
+alias iptlist="sudo /sbin/iptables -L -n -v --line-numbers"
+alias iptlistin="sudo /sbin/iptables -L INPUT -n -v --line-numbers"
+alias iptlistout="sudo /sbin/iptables -L OUTPUT -n -v --line-numbers"
+alias iptlistfw="sudo /sbin/iptables -L FORWARD -n -v --line-numbers"
 alias firewall=iptlist
 
 ####### Get system memory, cpu usage, and gpu memory info quickly
 
 ## pass options to free ##
-alias meminfo='free -m -l -t'
+alias meminfo="free -m -l -t"
  
 ## get top process eating memory
-alias psmem='ps auxf | sort -nr -k 4'
-alias psmem10='ps auxf | sort -nr -k 4 | head -10'
+alias psmem="ps auxf | sort -nr -k 4"
+alias psmem10="ps auxf | sort -nr -k 4 | head -10"
  
 ## get top process eating cpu ##
-alias pscpu='ps auxf | sort -nr -k 3'
-alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
+alias pscpu="ps auxf | sort -nr -k 3"
+alias pscpu10="ps auxf | sort -nr -k 3 | head -10"
  
 ## Get server cpu info ##
-alias cpuinfo='lscpu'
+alias cpuinfo="lscpu"
  
 ## older system use /proc/cpuinfo ##
-##alias cpuinfo='less /proc/cpuinfo' ##
+##alias cpuinfo="less /proc/cpuinfo" ##
  
 ## get GPU ram on desktop / laptop##
-alias gpumeminfo='grep -i --color memory /var/log/Xorg.0.log'
+alias gpumeminfo="grep -i --color memory /var/log/Xorg.0.log"
 
 
 #-------------------------------------------------------------
@@ -144,3 +151,7 @@ alias gx="ign = ls-files -o -i --exclude-standard"
 # Untrack Files without deleting them
 alias grmc="git rm -r --cached"
 
+source ~/powerlevel10k/powerlevel10k.zsh-theme
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
