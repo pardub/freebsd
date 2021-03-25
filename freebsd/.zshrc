@@ -18,7 +18,7 @@ setopt appendhistory
 ########To disable an alias, add "\" before the alias####
 ##########EXTRA INFO##########
 alias ll="ls -alh"
-alias h="history"
+alias h="history 1"
 alias mv="mv -iv"
 alias cp="cp -iv"
 alias rm="rm -iv"
