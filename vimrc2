@@ -1,4 +1,4 @@
-" fork form https://gist.github.com/miguelgrinberg/527bb5a400791f89b3c4da4bd61222e4
+" fork from https://gist.github.com/miguelgrinberg/527bb5a400791f89b3c4da4bd61222e4
 " for Fedora, run first sudo dnf install autoconf automake in order to install Ctags
 " https://github.com/universal-ctags/ctags
 " plugins
