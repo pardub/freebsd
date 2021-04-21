@@ -5,6 +5,9 @@
 " curl -LJO https://github.com/pardub/freebsd/edit/main/.vimrc
 " git clone --depth 1 https://github.com/neoclide/coc.nvim.git
 
+"save as root by redirecting to tee.
+command! -nargs=0 Sw w !sudo tee % > /dev/null
+
 call plug#begin()
 Plug 'dense-analysis/ale' 
 Plug 'psf/black' 
