@@ -156,3 +156,11 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+
+### DOCKER AUTO-COMPLETION WITH ZSH ###
+# Add the file _docker from https://github.com/felixr/docker-zsh-completion
+# Add these 2 lines below in .zshrc to enable the Docker commands from zsh.
+
+# zstyle ':completion:*:*:docker:*' option-stacking yes
+# zstyle ':completion:*:*:docker-*:*' option-stacking yes
